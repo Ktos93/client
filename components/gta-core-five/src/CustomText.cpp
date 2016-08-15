@@ -37,7 +37,7 @@ void AddCustomText(const char* key, const char* value)
 	g_textMap[HashString(key)] = value;
 }
 
-static HookFunction hookFunction([] ()
+/*static HookFunction hookFunction([] ()
 {
 	g_textMap[HashString("PM_PANE_LEAVE")] = "Disconnect";
 
@@ -46,4 +46,4 @@ static HookFunction hookFunction([] ()
 	hook::call(getTextPtr, GetText);
 
 	hook::call(hook::pattern("48 85 C0 75 34 8B 0D").count(1).get(0).get<void>(-5), GetText);
-});
+});*/

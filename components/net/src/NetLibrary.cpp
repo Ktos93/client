@@ -469,7 +469,7 @@ void NetLibrary::ProcessSend()
 	}
 
 	// FIXME: REPLACE HARDCODED STUFF
-/*	if (*(BYTE*)0x18A82FD) // is server running
+	/*if (*(BYTE*)0x18A82FD) // is server running
 	{
 		msg.Write(0xB3EA30DE); // msgIHost
 		msg.Write(m_serverBase);
