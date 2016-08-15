@@ -634,7 +634,7 @@ void CitizenGame::Launch(const std::wstring& gamePath)
 		ExitProcess(0);
 	}
 #endif
-
+	
 #if defined(GTA_NY)
 	// apply memory protection
 	DWORD oldProtect;

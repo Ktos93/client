@@ -222,6 +222,7 @@ void ExecutableLoader::LoadIntoModule(HMODULE module)
 #if defined(GTA_FIVE)
 	memcpy(sourceNtHeader, ntHeader, sizeof(IMAGE_NT_HEADERS) + (ntHeader->FileHeader.NumberOfSections * (sizeof(IMAGE_SECTION_HEADER))));
 #endif
+
 }
 
 HMODULE ExecutableLoader::ResolveLibrary(const char* name)
