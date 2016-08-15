@@ -13,10 +13,10 @@ deps = {
 	"vendor/protobuf": "https://github.com/google/protobuf.git@5eb73dfcce20bdfe421620cb31b7b98a0c5eec88",
 	"vendor/libopus": "http://git.opus-codec.org/opus.git",
 	"vendor/pash": "http://tohjo.eu/citidev/pash.git",
-	"vendor/breakpad": "http://chromium.googlesource.com/breakpad/breakpad",
+	"vendor/breakpad": "https://chromium.googlesource.com/breakpad/breakpad",
 	"vendor/udis86": "https://github.com/vmt/udis86.git",
 	"vendor/tinyxml2": "https://github.com/leethomason/tinyxml2.git",
-	"vendor/cpp-uri": "https://github.com/cpp-netlib/uri.git",
+	"vendor/cpp-uri": "https://github.com/0x452/cpp-uri.git",
 	"vendor/picohttpparser": "https://github.com/h2o/picohttpparser.git@98bcc1c3b431d05d4584af66082da48e4638a675",
 	"vendor/libssh": "http://tohjo.eu/citidev/libssh.git",
 	"vendor/xz": "http://git.tukaani.org/xz.git",
@@ -31,15 +31,15 @@ hooks = [
 	{
 		"name": "gen_udis_script",
 		"pattern": "vendor/udis86/",
-		"action": [ "citizenmp\prebuild_udis86.cmd" ]
+		"action": [ "client\prebuild_udis86.cmd" ]
 	},
 	{
 		"name": "build_premake_win",
 		"pattern": "build/premake/",
-		"action": [ "citizenmp\prebuild_premake.cmd" ]
+		"action": [ "client\prebuild_premake.cmd" ]
 	},
 	{
 		"name": "generic_prebuild_win",
-		"action": [ "citizenmp\prebuild_misc.cmd" ]
+		"action": [ "client\prebuild_misc.cmd" ]
 	}
 ]
