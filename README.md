@@ -1,4 +1,4 @@
-![Multiplayer for GTA V based on FiveM](http://multifive.org/images/multifive_logo.png)
+![Multiplayer for GTA V based on FiveM](http://multifive.org/img/logo.png)
 ## Introduction:
 
 All of code belongs to Bas Timmer/NTAuthority et al., see license:
@@ -33,7 +33,7 @@ All of code belongs to Bas Timmer/NTAuthority et al., see license:
 ```bash
 cd projectfoldername
 "%VS140COMNTOOLS%....\vc\vcvarsall.bat"
-gclient config --unmanaged https://github.com/multifive/client.git
+gclient config --unmanaged http://git.multifive.org/multifive/client.git
 gclient sync
 #  now it will setup enviroment via premake5
 #  download premake5 from here - http://premake.github.io/download.html#v5 and
@@ -49,6 +49,6 @@ It will take a while to index. Try to build the solution!
 
 ## How to start MultiFive?
 
-Open folder `client\bin\five\debug` and put there files [from that repository](https://github.com/multifive/cache/tree/master/caches/fivem) and then launch FiveM.exe.
+Open folder `client\bin\five\debug` and put there files [from that repository](http://git.multifive.org/multifive/cache/tree/master/caches/fivem) and then launch FiveM.exe.
 
-If you get any errors while compiling or doing something about that just leave your problem here: [Issues](https://github.com/multifive/client/issues). Thanks! :v:
+If you get any errors while compiling or doing something about that just leave your problem here: [Issues](http://git.multifive.org/multifive/client/issues). Thanks! :v:
