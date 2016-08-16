@@ -1155,8 +1155,6 @@ static HookFunction hookFunction([] ()
 	// and similarly, 'have bgscripts downloaded'
 	hook::put<uint8_t>(match.get<void>(43), 0xEB);
 
-	// UPPER MARK!
-
 	// unknownland
 	hook::put<uint16_t>(hook::pattern("8B B5 ? 02 00 00 85 F6 0F 84 B1").count(1).get(0).get<void>(8), 0xE990);
 
