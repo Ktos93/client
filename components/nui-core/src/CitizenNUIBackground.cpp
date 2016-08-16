@@ -230,8 +230,6 @@ void CitizenNUIBackground::Initialize()
 			}
 
 			DrawBackground(m_backdropTexture, CRGBA(255, 255, 255, 255));
-
-			DrawBackground(m_overlayTexture, color);
 		}
 	});
 }
