@@ -19,7 +19,7 @@ void L1FramedTcpConnection::SendMessage(const std::vector<uint8_t>& message)
 		uint32_t length;
 	} lengthHeader;
 
-	lengthHeader.signature = 0xDEADC0DE;
+	lengthHeader.signature = 0xDEADC2DE;
 	lengthHeader.length = message.size() - 8;
 
 	// build the full message by copying
@@ -86,7 +86,7 @@ void L1FramedTcpConnection::LengthReadCallback(concurrency::task<Result<SocketRe
 			memcpy(&lengthHeader, &byteArray[0], sizeof(lengthHeader));
 
 			// if the signature is valid
-			if (lengthHeader.signature == 0xDEADC0DE)
+			if (lengthHeader.signature == 0xDEADC2DE)
 			{
 				// read the expected data
 				size_t readLength = lengthHeader.length + 8;
