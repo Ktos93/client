@@ -304,19 +304,24 @@ static InitFunction initFunction([] ()
 		int x, y;
 		GetGameResolution(x, y);
 
-		const wchar_t* brandingString = L"MULTIFIVE-PREBETA \xD83C\xDF43";
+		const wchar_t* brandingString = L"MULTIFIVE";// \xD83C\xDF43";
+		const wchar_t* buildStatus = L"PREBETA";
 
 		static CRect metrics;
 		
 		if (metrics.Width() <= 0.1f)
 		{
-			g_fontRenderer.GetStringMetrics(brandingString, 18.0f, 1.0f, "Segoe UI", metrics);
+			g_fontRenderer.GetStringMetrics(brandingString, 18.0f, 1.0f, "Arial Black", metrics);
 		}
 
 		CRect drawRect(x - metrics.Width() - 10.0f, 10.0f, x, y);
-		CRGBA color(180, 180, 180);
+		CRect drawRectbs(x - metrics.Width() + 27.0f, 27.0f, x, y);
 
-		g_fontRenderer.DrawText(brandingString, drawRect, color, 18.0f, 1.0f, "Segoe UI");
+		CRGBA color(74, 93, 62);
+		CRGBA colorBS(180, 180, 180);
+
+		g_fontRenderer.DrawText(brandingString, drawRect, color, 18.0f, 1.0f, "Arial Black");
+		g_fontRenderer.DrawText(buildStatus, drawRectbs, colorBS, 12.0f, 1.0f, "Arial Black");
 #endif
 
 		g_fontRenderer.DrawPerFrame();
