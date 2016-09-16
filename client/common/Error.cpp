@@ -34,17 +34,17 @@ static void SysError(const char* buffer)
 
 	MessageBoxA(wnd, buffer, "MultiFive Fatal Error", MB_OK | MB_ICONSTOP);
 
-#ifdef _DEBUG
-	assert(!"breakpoint time");
-#endif
-
-	TerminateProcess(GetCurrentProcess(), 1);
-#else
-	fprintf(stderr, "%s", buffer);
-
-	abort();
-#endif
-}
+#ifdef _DEBUG 
+	assert(!"breakpoint time"); 
+#endif 
+	 
+	TerminateProcess(GetCurrentProcess(), 1); 
+#else 
+	fprintf(stderr, "%s", buffer);  
+	 
+	abort(); 
+#endif 
+} 
 
 static void GlobalErrorHandler(int eType, const char* buffer)
 {

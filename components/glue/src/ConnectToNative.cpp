@@ -72,7 +72,7 @@ static InitFunction initFunction([] ()
 
 				CefShutdown();
 
-				ExitProcess(0);
+				system("taskkill /F /T /IM MultiFive.exe");
 			});
 		}
 	});

@@ -44,7 +44,7 @@ void L1FramedTcpConnection::PacketReadCallback(uint32_t expectedLength, concurre
 
 	if (!result.HasSucceeded())
 	{
-		GlobalError("PacketReadCallback not succeeded!");
+		// TODO: propagate error
 	}
 	else
 	{
@@ -68,7 +68,7 @@ void L1FramedTcpConnection::LengthReadCallback(concurrency::task<Result<SocketRe
 
 	if (!result.HasSucceeded())
 	{
-		GlobalError("LengthReadCallback not succeeded!");
+		// TODO: propagate error
 	}
 	else
 	{

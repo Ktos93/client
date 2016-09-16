@@ -43,8 +43,8 @@ static InitFunction initFunction([] ()
 
 			if (nativeType == "quit")
 			{
-				// TODO: CEF shutdown and native stuff related to it (set a shutdown flag)
-				ExitProcess(0);
+				CefShutdown();
+				system("taskkill /F /T /IM MultiFive.exe");
 			}
 
 			return true;
