@@ -46,7 +46,7 @@ gclient sync
 Now you can open client\build\five\CitizenMP.sln with Visual Studio 2015
 It will take a while to index. Try to build the solution! 
 
-## How to start MultiFive?
+## How to start FiveM?
 
 Open folder `client\bin\five\debug` and put there files [from that repository](https://github.com/multifive/cache/tree/master/caches/fivem) and then launch FiveM.exe.
 
