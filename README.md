@@ -1,4 +1,3 @@
-![Multiplayer for GTA V based on FiveM](http://multifive.org/img/logo.png)
 ## Introduction:
 
 All of code belongs to Bas Timmer/NTAuthority et al., see license:
@@ -22,7 +21,7 @@ All of code belongs to Bas Timmer/NTAuthority et al., see license:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
   
-## How to compile MultiFive core?
+## How to compile FiveM core?
 ##### Install VS and needed components for compiling project:
 - [Visual Studio 2015 Community edition](https://www.visualstudio.com/ru-ru/downloads/download-visual-studio-vs.aspx) 
 - [Boost library 1.57](https://sourceforge.net/projects/boost/files/boost/1.57.0/)
@@ -33,7 +32,7 @@ All of code belongs to Bas Timmer/NTAuthority et al., see license:
 ```bash
 cd projectfoldername
 "%VS140COMNTOOLS%....\vc\vcvarsall.bat"
-gclient config --unmanaged http://git.multifive.org/multifive/client.git
+gclient config --unmanaged https://github.com/multifive/client.git
 gclient sync
 #  now it will setup enviroment via premake5
 #  download premake5 from here - http://premake.github.io/download.html#v5 and
@@ -49,6 +48,5 @@ It will take a while to index. Try to build the solution!
 
 ## How to start MultiFive?
 
-Open folder `client\bin\five\debug` and put there files [from that repository](http://git.multifive.org/multifive/cache/tree/master/caches/fivem) and then launch FiveM.exe.
+Open folder `client\bin\five\debug` and put there files [from that repository](https://github.com/multifive/cache/tree/master/caches/fivem) and then launch FiveM.exe.
 
-If you get any errors while compiling or doing something about that just leave your problem here: [Issues](http://git.multifive.org/multifive/client/issues). Thanks! :v:
